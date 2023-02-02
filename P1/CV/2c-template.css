@@ -10,6 +10,7 @@
 float: left;
 padding: 10px;
 min-height: 500px;
+background-color: transparent ;
 }
 
 .izquierda {
@@ -20,19 +21,12 @@ width: 25%;
 width: 75%;
 }
 
+
 /* Clear floats despues de las columnas para eliminar la superposición */
 .filla:after {
 content: "";
 display: table;
 clear: both;
-}
-
-#c1 {
-    background-color:#aaa;
-}
-
-#c2 {
-    background-color:#bbb;
 }
 
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
@@ -52,7 +46,7 @@ img {
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .columna {
       width: 100%;
     }
@@ -63,3 +57,28 @@ img {
 }
 
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
+
+.fondo{
+  background-image: url("fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+p{
+  color: white;
+  font-family: Inazuma;
+  font-stretch: expanded;
+}
+h1,h2,h3,h4,h5,h6,h7,h8,h9{
+  color: white;
+  font-family: Inazuma;
+}
+li{
+  color: white;
+  font-family: Inazuma;
+}
+@font-face {
+  font-family: 'Inazuma' ;
+  src: url(Armageda\ Wide.ttf);
