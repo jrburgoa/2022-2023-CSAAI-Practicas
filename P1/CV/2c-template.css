@@ -14,11 +14,11 @@ background-color: transparent ;
 }
 
 .izquierda {
-width: 25%;
+width: 30%;
 }
 
 .derecha {
-width: 75%;
+width: 70%;
 }
 
 
@@ -35,12 +35,15 @@ clear: both;
 img {
     width: 100%;
     height: auto;
+
 }
 
 .iresponsive {
     padding: 0 6px;
     float: left;
     width: 50%;
+    display: block;
+    
   }
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
@@ -63,22 +66,34 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+  filter:
   
 }
 p{
   color: white;
-  font-family: Inazuma;
-  font-stretch: expanded;
+  font-stretch: ultra-expanded;
+  font-style: "font-family:courier,arial,helvética;";
 }
-h1,h2,h3,h4,h5,h6,h7,h8,h9{
+h1,h2{
   color: white;
   font-family: Inazuma;
+  font-stretch: ultra-expanded;
+  text-align: center;
 }
+
 li{
   color: white;
-  font-family: Inazuma;
+  font-style: "font-family:courier,arial,helvética;";
+  list-style-image: url("snowflake.png");
+  align-items: center;
+  text-align: justify;
+
 }
 @font-face {
   font-family: 'Inazuma' ;
   src: url(Armageda\ Wide.ttf);
+}
+
+ul{
+  columns: 3;
+}
