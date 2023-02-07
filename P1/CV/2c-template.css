@@ -49,7 +49,7 @@ img {
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .columna {
       width: 100%;
     }
@@ -73,6 +73,7 @@ p{
   color: white;
   font-stretch: ultra-expanded;
   font-style: "font-family:courier,arial,helvética;";
+  text-align: justify;
 }
 h1,h2{
   color: white;
@@ -87,6 +88,7 @@ li{
   list-style-image: url("snowflake.png");
   align-items: center;
   text-align: justify;
+  
 
 }
 @font-face {
