@@ -11,6 +11,10 @@ float: left;
 padding: 50px;
 min-height: 10px;
 background-color: transparent ;
+border: #00aab6  10px double;
+margin-top: 0px;
+padding: 45px;
+flex-wrap: wrap;
 }
 
 .izquierda {
@@ -19,6 +23,7 @@ width: 30%;
 
 .derecha {
 width: 40%;
+
 }
 
 
@@ -44,9 +49,10 @@ img {
     float: left;
     width: 100%;
     display: block;
-    margin-left: auto;
+    margin-left: 60px;
     margin-right: auto;
     border-radius: 100%;
+    margin-bottom: 25px;
     
   }
 
@@ -54,23 +60,24 @@ img {
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
 @media screen and (max-width: 600px) {
-    .columna {
-      width: 50%;
-    }
+  .columna {
+    width: 100%;
+  }
 
-    .iresponsive {
-        width: 100%;
-        display: block;
-        padding: 100px;
-    }
+  .iresponsive {
+      width: 50%;
+      display: block;
+      padding: 20px;
+  }
 }
 
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
 
 .fondo{
-  background-image: url("fondo.jpg");
+  background-image: url("fondocv.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  background-size: 100%;
   
   
   }
@@ -86,18 +93,15 @@ h1,h2{
   font-family: Inazuma;
   font-stretch: ultra-expanded;
   text-align: center;
-  border: #00aab6  10px double;
-  margin-top: 0px;
-  padding: 10px;
-  flex-wrap: wrap;
 }
+
 
 li{
   color: white;
   font-style: "font-family:courier,arial,helvética;";
   list-style-image: url("snowflake.png");
   text-align: justify;
-  padding-left: 80px;
+  padding-left: 20px;
   padding: 2px;
   
 
@@ -111,6 +115,6 @@ ul{
   columns: 3;
 }
 
-p2 {
+address {
   columns: 2;
 }
