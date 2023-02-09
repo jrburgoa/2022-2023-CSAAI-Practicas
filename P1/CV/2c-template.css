@@ -70,8 +70,8 @@ img {
 .fondo{
   background-image: url("fondo.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  
   
   }
   
@@ -86,6 +86,10 @@ h1,h2{
   font-family: Inazuma;
   font-stretch: ultra-expanded;
   text-align: center;
+  border: #00aab6  10px double;
+  margin-top: 0px;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 li{
