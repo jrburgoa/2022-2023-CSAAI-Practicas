@@ -3,26 +3,34 @@
 /* Así definimos el comportamiento de caja para todos los elementos */
 * {
     box-sizing: border-box;
+    align-self: center;
   }
   
 /* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
 .columna {
 float: left;
-padding: 50px;
+padding: 5px;
 min-height: 10px;
 background-color: transparent ;
 border: #00aab6  10px double;
 margin-top: 0px;
 padding: 45px;
 flex-wrap: wrap;
+
+
 }
 
 .izquierda {
 width: 30%;
+margin-left: 230px;
+margin-bottom: 
 }
 
 .derecha {
-width: 40%;
+width: 45%;
+padding-left: 100px;
+padding: 42.5px;
+
 
 }
 
@@ -45,14 +53,12 @@ img {
 }
 
 .iresponsive {
-    padding:  0 70px;
+   
     float: left;
-    width: 100%;
-    display: block;
-    margin-left: 60px;
     margin-right: auto;
     border-radius: 100%;
     margin-bottom: 25px;
+    
     
   }
 
@@ -66,8 +72,9 @@ img {
 
   .iresponsive {
       width: 50%;
-      display: block;
-      padding: 20px;
+      
+      
+     
   }
 }
 
@@ -88,7 +95,36 @@ p{
   font-style: "font-family:courier,arial,helvética;";
   text-align: justify;
 }
-h1,h2{
+h1{
+  color: white;
+  font-family: Inazuma;
+  font-stretch: ultra-expanded;
+  text-align: center;
+  font-size: 50px;
+  text-shadow:2px 2px grey;
+}
+.apartados{  
+  border-bottom: #00aab6 10px double;
+  padding: 10px;
+  display: inline-flex;
+  width: 95%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-shadow:2px 2px grey;
+  }
+
+.gif{
+  position: absolute;
+  padding-left:190px;
+  margin-top: 10px;
+}
+
+
+h2{
   color: white;
   font-family: Inazuma;
   font-stretch: ultra-expanded;
@@ -96,14 +132,13 @@ h1,h2{
 }
 
 
-li{
+li{ 
   color: white;
   font-style: "font-family:courier,arial,helvética;";
   list-style-image: url("snowflake.png");
-  text-align: justify;
-  padding-left: 20px;
-  padding: 2px;
-  
+  margin-left: 40px;
+  padding: 3px;
+  margin-top: 5px;
 
 }
 @font-face {
