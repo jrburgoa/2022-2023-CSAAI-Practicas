@@ -65,25 +65,12 @@ img {
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 600px) {
-  .columna {
-    width: 100%;
-  }
 
-  .iresponsive {
-      width: 50%;
-      
-      
-     
-  }
-}
 
 /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
 
 .fondo{
   background-image: url("fondocv.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
   background-size: 100%;
   
   
@@ -116,12 +103,6 @@ h1{
   align-items: center;
   text-shadow:2px 2px grey;
   }
-
-.gif{
-  position: absolute;
-  padding-left:190px;
-  margin-top: 10px;
-}
 
 
 h2{
