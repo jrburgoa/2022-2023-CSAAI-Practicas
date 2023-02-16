@@ -23,7 +23,7 @@ flex-wrap: wrap;
 .izquierda {
 width: 30%;
 margin-left: 230px;
-margin-bottom: 
+margin-bottom: 20px 
 }
 
 .derecha {
@@ -71,6 +71,7 @@ img {
 
 .fondo{
   background-image: url("fondocv.jpg");
+ 
   background-size: 100%;
   
   
@@ -117,7 +118,7 @@ li{
   color: white;
   font-style: "font-family:courier,arial,helvética;";
   list-style-image: url("snowflake.png");
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 3px;
   margin-top: 5px;
 
