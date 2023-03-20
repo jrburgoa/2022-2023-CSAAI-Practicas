@@ -1,5 +1,6 @@
 //Practica Boom Johann Burgoa
 
+
 //-- Clase cronómetro
 class Crono {
 
@@ -97,3 +98,44 @@ gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
 }
+
+// Generar 4 números aleatorios de 0 a 9
+const secretkey = [];
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+for (let i = 0; i < 4; i++) {
+  let rnum = getRandomInt(10);
+  secretkey.push(rnum);
+}
+
+const line0Buttons = document.querySelectorAll('.line0 .cdigito');
+
+
+line0Buttons.forEach((button, index) => {
+  button.value = secretkey[index];
+  button.textContent = '*';
+
+});
+
+
+// Obtener botones de línea
+const lineButtons = document.querySelectorAll('.line1 button, .line2 button, .line3 button, .line4 button');
+
+// Agregar controladores de eventos para cada botón
+lineButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const digit = parseInt(button.value);
+    const displayDigits = document.querySelectorAll('.line0 .cdigito');
+    displayDigits.forEach((displayDigit) => {
+      if (displayDigit.textContent === '*') {
+        const displayValue = parseInt(displayDigit.value);
+        if (digit === displayValue) {
+          displayDigit.textContent = digit;
+        }
+      }
+    });
+  });
+});
