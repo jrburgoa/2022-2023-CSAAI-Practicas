@@ -1,58 +1,90 @@
 /* Estilo BOOM Johann Burgoa */
 
+/* Estilos para el display del cronómetro */
 body {
-  background-image: url("hhh.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("bomb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.calc {
-  width: 32%;
-  margin: 0 auto;
-  border-radius: 80px;
-  font-size: 80px;
-  text-align: center;
-  padding: 0;
-}
-
-.Crono {
-  width: 800px;
-  height: 30px;
-  margin: 0 auto;
-  padding: 10px 0 38px 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 30px 30px 0 0;
-  border: 15px solid rgba(6, 85, 60, 0.884);
-  border-bottom: 5px solid rgba(38, 199, 228, 0.7);
-}
-
-p {
+#display {
+  font-family: monospace;
   font-size: 40px;
-  height: 50px;
-  margin: 0;
   text-align: center;
-  border-radius: 80px;
-  border: 1px solid rgba(0, 0, 0, 0.7); 
-  padding-top: 8px;
-}
-
-.Calculator {
-  width: 800px;
-  margin: 0 auto;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 0 0 30px 30px;
-}
-
-.line0 {
-  padding-bottom: -10px;
+  padding: 2px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 10px rgba(0, 0, 0, 0.2);
 }
 
 button {
-  width: 220px;
+  font-family: sans-serif;
   font-size: 50px;
+  padding: 1px;
+  width: 200px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 10px rgba(0, 0, 0, 0.2);
+  
+  
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  cursor: pointer;
+  background-color: #555;
 }
 
+.line0 .cdigito {
+  font-family: monospace;
+  font-size: 50px;
+  width: 200px;
+  margin: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: rgb(158, 9, 9);
+  box-shadow: 10px rgba(0, 0, 0, 0.2);
+}
+
+.line0 .cdigito:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.line1 .cdigito,
+.line2 .cdigito,
+.line3 .cdigito,
+.line4 .cdigito {
+  font-family: monospace;
+  font-size: 50px;
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.line1 .cdigito:hover,
+.line2 .cdigito:hover,
+.line3 .cdigito:hover,
+.line4 .cdigito:hover {
+  cursor: pointer;
+  background-color: #529eb6;
+}
+.cdigito.correcto {
+  background-color: green;
+  color: white;
+}
