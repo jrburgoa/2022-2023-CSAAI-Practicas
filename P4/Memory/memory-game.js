@@ -28,7 +28,8 @@ const generateGame = () => {
     
     const img = ['emoji.png', 'fireemoji.png', 'heartemoji.png', 'emoji.png', 
     'fireemoji.png', 'heartemoji.png', 'emoji.png', 'fireemoji.png', 'heartemoji.png', 
-    'emoji.png', 'fireemoji.png', 'heartemoji.png', 'emoji.png', 'fireemoji.png', 'heartemoji.png']
+    'emoji.png', 'fireemoji.png', 'heartemoji.png', 'emoji.png', 'fireemoji.png', 'heartemoji.png',
+    'heartemoji.png', 'emoji.png', 'fireemoji.png', 'heartemoji.png']
 
     //-- Elegimos un subconjunto de emojis al azar, así cada vez que comienza el juego
     // es diferente.
@@ -186,8 +187,8 @@ const flipCard = card => {
             // Le mostramos las estadísticas del juego
             selectors.win.innerHTML = `
                 <span class="win-text">
-                    ¡Has ganado!<br />
-                    con <span class="highlight">${state.totalFlips}</span> movimientos<br />
+                    ¡Has ganado!<br/>
+                    con <span class="highlight">${state.totalFlips}</span> movimientos<br/>
                     en un tiempo de <span class="highlight">${state.totalTime}</span> segundos
                 </span>
             `
