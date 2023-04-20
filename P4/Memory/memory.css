@@ -129,3 +129,17 @@ button {
 .highlight {
     color: #6f00fc;
 }
+
+h1 {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+  }
